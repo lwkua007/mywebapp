@@ -585,17 +585,26 @@
                                         <div class="payment-method-info">
                                             <div class="paypal-method-flex">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                                    <label class="custom-control-label" for="customCheck5">Cash on delivery</label>
+                                                    <input type="checkbox">
+                                                    <label>Cash on delivery</label>
                                                     <p>Pay with cash upon delivery.</p>
                                                 </div>
                                             </div>
                                             <div class="paypal-method-flex">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                                    <label class="custom-control-label" for="customCheck6">PayPal</label>
+                                                    <a href="paypal.html" class="btn">Paypal</a>
                                                 </div>
                                                 <div class="paypal-logo"><img src="img/images/card.png" alt=""></div>
+                                            </div>
+                                            <div class="paypal-method-flex">
+                                                <div class="custom-control custom-checkbox">
+                                                    <a href="https://gateway.test.95516.com/gateway/api/frontTransReq.do" class="btn">UnionPay</a>
+                                                </div>
+                                            </div>
+                                            <div class="paypal-method-flex">
+                                                <div class="custom-control custom-checkbox">
+                                                    <a href="https://openapi.alipay.com/gateway.do?timestamp=2013-01-01 08:08:08&method=alipay.trade.page.pay&app_id=24610&sign_type=RSA2&sign=ERITJKEIJKJHKKKKKKKHJEREEEEEEEEEEE&version=1.0&charset=GBK&biz_content=AlipayTradePageCreateandpayModel" class="btn">AliPay</a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="payment-terms">
@@ -605,7 +614,6 @@
                                                 <label class="custom-control-label" for="customCheck7">I agree to the website terms and conditions</label>
                                             </div>
                                         </div>
-                                        <a href="checkout.html" class="btn">Place order</a>
                                     </form>
                                 </div>
                             </div>
@@ -760,5 +768,7 @@
         <script src="js/aos.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script> -->
     </body>
 </html>

@@ -488,9 +488,9 @@
                                             <tr>
                                                 <th class="product-thumbnail"></th>
                                                 <th class="product-name">Product</th>
-                                                <th class="product-price">Price</th>
+                                                <th class="product-price">Price: $ </th>
                                                 <th class="product-quantity">QUANTITY</th>
-                                                <th class="product-subtotal">SUBTOTAL</th>
+                                                <th class="product-subtotal">SUBTOTAL: $ </th>
                                                 <th class="product-delete"></th>
                                             </tr>
                                         </thead>
@@ -500,11 +500,17 @@
                                                 <td class="product-name">
                                                     <h4><a href="shop-details.html">Orange Bens Vanla</a></h4>
                                                 </td>
-                                                <td class="product-price">$ 27.00</td>
+                                                <td class="product-price">
+                                                    <div>
+                                                        <form action="" name="form1">
+                                                            <input type="text" name="price" value="1.99" disabled="">
+                                                        </form>
+                                                    </div>
+                                                </td>
                                                 <td class="product-quantity">
                                                     <div class="cart--plus--minus">
-                                                        <form action="#" class="num-block">
-                                                            <input type="text" class="in-num" value="1" readonly="">
+                                                        <form action="" class="num-block" name="form2">
+                                                            <input type="text" class="in-num" name="num" value="1" readonly="" onchange="count()">
                                                             <div class="qtybutton-box">
                                                                 <span class="plus"><i class="fas fa-angle-up"></i></span>
                                                                 <span class="minus dis"><i class="fas fa-angle-down"></i></span>
@@ -512,29 +518,35 @@
                                                         </form>
                                                     </div>
                                                 </td>
-                                                <td class="product-subtotal"><span>$ 27.99</span></td>
-                                                <td class="product-delete"><a href="#"><i class="far fa-trash-alt"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="product-thumbnail"><a href="shop-details.html"><img src="img/product/cart_img02.jpg" alt=""></a></td>
-                                                <td class="product-name">
-                                                    <h4><a href="shop-details.html">Dannon Capcicam</a></h4>
-                                                </td>
-                                                <td class="product-price">$ 40.00</td>
-                                                <td class="product-quantity">
-                                                    <div class="cart--plus--minus">
-                                                        <form action="#" class="num-block">
-                                                            <input type="text" class="in-num" value="1" readonly="">
-                                                            <div class="qtybutton-box">
-                                                                <span class="plus"><i class="fas fa-angle-up"></i></span>
-                                                                <span class="minus dis"><i class="fas fa-angle-down"></i></span>
-                                                            </div>
+                                                <td class="product-subtotal">
+                                                    <div>
+                                                        <form action="" name="form3">
+                                                            <span><input type="text" name="money"  disabled=""></span>
                                                         </form>
                                                     </div>
                                                 </td>
-                                                <td class="product-subtotal"><span>$ 40.99</span></td>
                                                 <td class="product-delete"><a href="#"><i class="far fa-trash-alt"></i></a></td>
                                             </tr>
+<!--                                            <tr>-->
+<!--                                                <td class="product-thumbnail"><a href="shop-details.html"><img src="img/product/cart_img02.jpg" alt=""></a></td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <h4><a href="shop-details.html">Dannon Capcicam</a></h4>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">40.00</td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="cart&#45;&#45;plus&#45;&#45;minus">-->
+<!--                                                        <form action="#" class="num-block">-->
+<!--                                                            <input type="text" class="in-num" value="1" readonly="">-->
+<!--                                                            <div class="qtybutton-box">-->
+<!--                                                                <span class="plus"><i class="fas fa-angle-up"></i></span>-->
+<!--                                                                <span class="minus dis"><i class="fas fa-angle-down"></i></span>-->
+<!--                                                            </div>-->
+<!--                                                        </form>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal"><span>40.99</span></td>-->
+<!--                                                <td class="product-delete"><a href="#"><i class="far fa-trash-alt"></i></a></td>-->
+<!--                                            </tr>-->
                                         </tbody>
                                     </table>
                                 </div>
@@ -555,23 +567,27 @@
                             <div class="shop-cart-total">
                                 <h3 class="title">Cart Totals</h3>
                                 <div class="shop-cart-widget">
-                                    <form action="#">
+                                    <form action="" name="form4">
                                         <ul>
-                                            <li class="sub-total"><span>Subtotal</span> $ 136.00</li>
+                                            <li class="sub-total"><span>Subtotal: $ <input type="text" name="subtotal"  disabled=""></span></li>
                                             <li>
-                                                <span>Shipping</span>
-                                                <div class="shop-check-wrap">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                        <label class="custom-control-label" for="customCheck1">Free Shipping</label>
-                                                    </div>
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                        <label class="custom-control-label" for="customCheck2">LOCAL PICKUP: $5.00</label>
-                                                    </div>
-                                                </div>
+                                                <span>Shipping: $ </span>
+                                                <span><input type="text" name="pickupPrice" value="0.5" disabled=""></span>
+<!--                                                <div class="shop-check-wrap">-->
+<!--                                                    <div class="custom-control custom-checkbox">-->
+<!--                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">-->
+<!--                                                        <label class="custom-control-label" for="customCheck1">Free Shipping</label>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="custom-control custom-checkbox">-->
+<!--                                                        <input type="checkbox" class="custom-control-input" id="customCheck2">-->
+<!--                                                        <label class="custom-control-label" for="customCheck2"><span>LOCAL PICKUP</span></label>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
                                             </li>
-                                            <li class="cart-total-amount"><span>Total Price</span> <span class="amount">$ 151.00</span></li>
+                                            <li class="cart-total-amount">
+                                                <span>Total Price: $ </span>
+                                                <span><input type="text" name="totalprice" disabled=""></span>
+                                            </li>
                                         </ul>
                                         <a href="checkout.html" class="btn">PROCEED TO CHECKOUT</a>
                                     </form>
@@ -696,7 +712,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="copyright-text">
-                                <p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                                <p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/"></a></p>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -728,5 +744,6 @@
         <script src="js/aos.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/cal-cart.js"></script>
     </body>
 </html>
