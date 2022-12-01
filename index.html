@@ -68,42 +68,54 @@
         <header>
 
             <!-- header-message -->
-            <div class="header-message-wrap">
-                <div class="container custom-container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="top-notify-message">
-                                <p>place your complaints (if any) within 24hrs of receiving your delivery</p>
-                                <span class="message-remove">X</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="header-message-wrap">-->
+<!--                <div class="container custom-container">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-12">-->
+<!--                            <div class="top-notify-message">-->
+<!--                                <p>place your complaints (if any) within 24hrs of receiving your delivery</p>-->
+<!--                                <span class="message-remove">X</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
             <!-- header-message-end -->
 
+            <div style="position: absolute;right: 0px; bottom: 0px">
+                <img src="https://static-maps.yandex.ru/1.x/?ll=27.547153,53.893869&size=450,450&z=15&l=map&pt=27.547153,53.893869,pm2rdm88~27.548267,53.892373,pm2dgm87" alt="">
+            </div>
+
             <!--  Friendly Links -->
-            <div style="position:fixed;top:200px; height:265px;">
+            <div style="position:fixed;top:200px;">
                 <a href="https://xtx-12.herokuapp.com/index.html">
-                    <img src="img/ad/zhoubo.jpg" alt="Food" width='200' height='200'>
+                    <img src="img/slider/zhoubo.jpg" alt="Food" width='200' height='200'>
                 </a>
             </div>
-            <div style="position:fixed;top:400px; height:485px;">
+            <div style="position:fixed;top:400px;">
                 <a href="https://xtx-12.herokuapp.com/index.html">
-                    <img src="img/ad/guoxiaojian.png" alt="Mooncake" width='200' height='100'>
+                    <img src="img/slider/guoxiaojian.png" alt="Mooncake" width='200' height='100'>
                 </a>
             </div>
-            <div style="position:fixed;top:200px; height:265px; right:0;">
+            <div style="position:fixed;top:200px; right:0;">
                 <a href="https://travelwebsite666.herokuapp.com/">
-                    <img src="img/ad/roadtrip.jpg" alt="Roadtrip" width='200' height='200'>
+                    <img src="img/slider/roadtrip.jpg" alt="Roadtrip" width='200' height='200'>
                 </a>
             </div>
-            <div style="position:fixed;top:400px; height:485px; right:0;">
+            <div style="position:fixed;top:400px; right:0;">
                 <a href="https://mytravel966.herokuapp.com/index.html">
-                    <img src="img/ad/yuzhe.jpg" alt="yuzheTravel" width='200' height='100'>
+                    <img src="img/slider/yuzhe.jpg" alt="yuzheTravel" width='200' height='100'>
                 </a>
             </div>
             <!--  Friendly Links end -->
+
+            <!--  banner  -->
+            <div class="banner" style="position:fixed;top:500px;">
+                <a id="bannerlink" href="https://shopping-chn.herokuapp.com/index.html">
+                    <img id="bannerImage" src="" width='200' height='100' alt="banner">
+                </a>
+            </div>
+            <!--  banner end  -->
 
             <!-- header-top-start -->
             <div class="header-top-wrap">
@@ -501,20 +513,16 @@
                     <div class="row">
                         <div class="col-7">
                             <div class="slider-active">
-                                <div class="single-slider slider-bg" data-background="img/slider/slider_bg01.jpg">
+                                <div class="single-slider slider-bg" data-background="img/slider/zhoubo.png">
                                     <div class="slider-content">
-                                        <h5 class="sub-title" data-animation="fadeInUp" data-delay=".2s">top deal !</h5>
-                                        <h2 class="title" data-animation="fadeInUp" data-delay=".4s">organic food</h2>
-                                        <p data-animation="fadeInUp" data-delay=".6s">Get up to 50% OFF Today Only</p>
-                                        <a href="shop.html" class="btn rounded-btn" data-animation="fadeInUp" data-delay=".8s">Shop Now</a>
+                                        <h2 class="title" data-animation="fadeInUp" data-delay=".4s">chinese food</h2>
+                                        <a href="https://xtx-12.herokuapp.com/index.html" class="btn rounded-btn" data-animation="fadeInUp" data-delay=".8s">Shop Now</a>
                                     </div>
                                 </div>
-                                <div class="single-slider slider-bg" data-background="img/slider/slider_bg01.jpg">
+                                <div class="single-slider slider-bg" data-background="img/slider/guoxiaojian.jpg">
                                     <div class="slider-content">
-                                        <h5 class="sub-title" data-animation="fadeInUp" data-delay=".2s">Real simple !</h5>
-                                        <h2 class="title" data-animation="fadeInUp" data-delay=".4s">Time Grocery</h2>
-                                        <p data-animation="fadeInUp" data-delay=".6s">Get up to 50% OFF Today Only</p>
-                                        <a href="shop.html" class="btn rounded-btn" data-animation="fadeInUp" data-delay=".8s">Shop Now</a>
+                                        <h2 class="title" data-animation="fadeInUp" data-delay=".4s">Household appliances</h2>
+                                        <a href="https://guo-site.herokuapp.com/index.html" class="btn rounded-btn" data-animation="fadeInUp" data-delay=".8s">Shop Now</a>
                                     </div>
                                 </div>
                                 <div class="single-slider slider-bg" data-background="img/slider/slider_bg01.jpg">
@@ -1346,7 +1354,7 @@
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6">
-                            <img src="https://static-maps.yandex.ru/1.x/?ll=27.547153,53.893869&size=450,450&z=15&l=map&pt=27.547153,53.893869,pm2rdm88~27.548267,53.892373,pm2dgm87" alt="">
+                            <img src="img/slider/yandexmap.png" alt="" width="400" height="320">
                         </div>
                     </div>
                 </div>
@@ -1389,5 +1397,6 @@
         <script src="js/aos.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/banner.js"></script>
     </body>
 </html>
